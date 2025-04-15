@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Background</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+      transition: background-color 0.1s linear;
+    }
+
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="center-text">
+    Move your cursor around!
+  </div>
+
+  <script>
+    document.addEventListener("mousemove", function(event) {
+      const x = event.clientX / window.innerWidth;
+      const y = event.clientY / window.innerHeight;
+
+      // Convert to 0-255 RGB values
+      const r = Math.round(x * 255);
+      const g = Math.round(y * 255);
+      const b = Math.round((1 - x) * 255);
+
+      document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    });
+  </script>
+</body>
+</html>
