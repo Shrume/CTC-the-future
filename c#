@@ -1,0 +1,22 @@
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+  <!-- Album cards go here -->
+</div>
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the canvas fills the viewport */
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#three-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

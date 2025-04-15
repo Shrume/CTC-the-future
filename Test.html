@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple-Inspired Album Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+  <style>
+
+
+    
+    /* Importing a clean, modern font similar to Apple's SF Pro */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Smooth hover effect for album cards */
+    .album-card:hover .overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col items-center p-6">
+
+  <h1 class="text-4xl font-semibold mb-10">🎵 Album Collection</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-w-7xl">
+
+    <!-- Album Card -->
+    <div class="relative album-card rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+      <img src="https://via.placeholder.com/500x500.png?text=Album+1" alt="Album 1" class="w-full h-auto object-cover">
+      <div class="overlay absolute inset-0 bg-white bg-opacity-90 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+        <h2 class="text-xl font-semibold mb-1">Album Title 1</h2>
+        <p class="text-sm text-gray-700">Artist Name</p>
+        <p class="text-xs text-gray-500 mt-1">Released: 2021</p>
+      </div>
+    </div>
+
+    <!-- Repeat the above block for more albums -->
+    <div class="relative album-card rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+      <img src="https://via.placeholder.com/500x500.png?text=Album+2" alt="Album 2" class="w-full h-auto object-cover">
+      <div class="overlay absolute inset-0 bg-white bg-opacity-90 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+        <h2 class="text-xl font-semibold mb-1">Album Title 2</h2>
+        <p class="text-sm text-gray-700">Another Artist</p>
+        <p class="text-xs text-gray-500 mt-1">Released: 2019</p>
+      </div>
+    </div>
+
+
+    <div class="relative group rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="ALBUM_COVER_URL" alt="Album Title" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+          <h2 class="text-xl font-semibold mb-1">Album Title</h2>
+          <p class="text-sm text-gray-700">Artist Name</p>
+          <p class="text-xs text-gray-500 mt-1">Released: Year</p>
+        </div>
+      </div>
+
+
+      <div class="relative group rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="ALBUM_COVER_URL" alt="Album Title" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+          <h2 class="text-xl font-semibold mb-1">Album Title</h2>
+          <p class="text-sm text-gray-700">Artist Name</p>
+          <p class="text-xs text-gray-500 mt-1">Released: Year</p>
+        </div>
+      </div>
+
+
+
+      <div class="relative group rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="ALBUM_COVER_URL" alt="Album Title" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+          <h2 class="text-xl font-semibold mb-1">Album Title</h2>
+          <p class="text-sm text-gray-700">Artist Name</p>
+          <p class="text-xs text-gray-500 mt-1">Released: Year</p>
+        </div>
+      </div>
+
+
+      <div class="relative group rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="ALBUM_COVER_URL" alt="Album Title" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+          <h2 class="text-xl font-semibold mb-1">Album Title</h2>
+          <p class="text-sm text-gray-700">Artist Name</p>
+          <p class="text-xs text-gray-500 mt-1">Released: Year</p>
+        </div>
+      </div>
+
+
+      <div class="relative group rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-105">
+        <img src="ALBUM_COVER_URL" alt="Album Title" class="w-full h-auto object-cover">
+        <div class="absolute inset-0 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-4">
+          <h2 class="text-xl font-semibold mb-1">Album Title</h2>
+          <p class="text-sm text-gray-700">Artist Name</p>
+          <p class="text-xs text-gray-500 mt-1">Released: Year</p>
+        </div>
+      </div>
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Album Grid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="three-canvas"></canvas>
+
+  <!-- Include Three.js and GSAP via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- Add more album cards as needed -->
+
+  </div>
+</body>
+</html>
