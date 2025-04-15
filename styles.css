@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 200vh; /* Ensure page is tall enough to scroll */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.album-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start slightly below */
+}
+
+.album-box.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to normal position */
+}
+
+.album-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.album-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.album-box h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
